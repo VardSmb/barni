@@ -961,7 +961,7 @@ body {
 }
 .catalog-grid__item {
   width: 300px;
-  margin-bottom: 30px;
+  margin: 0 5px 30px 5px;
 }
 .catalog-item {
   display: flex;
@@ -1004,7 +1004,7 @@ body {
   margin-top: 25px;
 }
 .catalog-item__label {
-  max-width: 285px;
+  /*max-width: 285px;*/
   margin: 0 auto;
   text-align: center;
   font-family: "Iskra CYR Md", sans-serif;
@@ -1053,6 +1053,44 @@ body {
   color: #003595;
   text-decoration: none;
 }
+
+/* seasonal products new year*/
+
+.catalog-block__content.seasonal-products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seasonal-products .catalog-grid{
+  justify-content: space-between;
+  width: 100%;
+}
+
+.seasonal-products .catalog-grid:nth-child(1){
+  max-width: 860px;
+}
+
+.seasonal-products .catalog-grid:nth-child(1) .catalog-grid__item{
+  width: 220px;
+}
+
+.seasonal-products .catalog-grid:nth-child(2){
+  max-width: 1140px;
+}
+
+.seasonal-products .catalog-grid:nth-child(3){
+  max-width: 740px;
+}
+
+@media screen and (max-width: 960px) {
+  .seasonal-products .catalog-grid{
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+
 
 .video {
   width: 100%;
@@ -1533,6 +1571,7 @@ body {
     margin: auto;
   }
 }
+
 @media screen and (max-width: 600px) {
   .footer-second {
     margin-top: 0;
@@ -1932,25 +1971,25 @@ body {
 
 .qr-bts {
   position: absolute;
-  top: 15px;
-  left: -285px;
+  top: 26px;
+  left: 140px;
   right: 0;
   margin: auto;
-  width: 182px;
-  height: 184px;
+  width: 164px;
+  height: 180px;
   background: url(../images/bts/qr-bg.png) center center/contain no-repeat;
 }
 
 .qr-bts img {
   position: absolute;
-  top: 5px;
-  left: -5px;
+  top: 30px;
+  left: 6px;
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 101px;
-  height: 101px;
-  transform: rotate(15.39deg);
+  width: 74px;
+  height: 74px;
+  transform: rotate(-14.93deg);
 }
 
 .section-invertor-banner {
@@ -2024,14 +2063,15 @@ body {
   }
 
   .qr-bts {
-    left: -205px;
-    width: 132px;
-    height: 134px;
+    left: 100px;
+    top: 10px;
+    width: 124px;
+    height: 140px;
   }
 
   .qr-bts img {
-    width: 71px;
-    height: 71px;
+    width: 55px;
+    height: 55px;
   }
 }
 
@@ -2041,14 +2081,17 @@ body {
   }
 
   .qr-bts {
-    left: -175px;
-    width: 102px;
-    height: 104px;
+    left: 80px;
+    top: 7px;
+    width: 104px;
+    height: 120px;
   }
 
   .qr-bts img {
-    width: 58px;
-    height: 58px;
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    left: 5px;
   }
 
   .section-invertor-banner {
@@ -2102,7 +2145,7 @@ body {
 @media only screen and (max-width: 740px) {
   .section-bts {
     height: 656px;
-    background: url(../images/bts/bts-bg-mob.jpg) center top/102% no-repeat;
+    background: url(../images/bts/bts-bg-mob.jpg) center bottom/102% no-repeat;
   }
 
   .section-bts::before {
@@ -2125,7 +2168,7 @@ body {
     right: 0;
     margin: auto;
     display: flex !important;
-    width: 170px;
+    width: 118px;
     height: 48px;
   }
 
@@ -2136,6 +2179,12 @@ body {
   .popup__list-item {
     max-width: 150px;
     height: 43px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-bts {
+    background: url(../images/bts/bts-bg-mob.jpg) center 100% no-repeat;
   }
 }
 
