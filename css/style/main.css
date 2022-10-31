@@ -1953,7 +1953,7 @@ body {
 
 .section-bts {
   position: relative;
-  height: 611px;
+  height: 618px;
   background: url(../images/bts/bts-bg.jpg) center 0/cover no-repeat;
   image-rendering: optimizequality;
   image-rendering: -webkit-optimize-contrast;
@@ -2056,14 +2056,82 @@ body {
   background: url(../images/cloud.png) center center/contain no-repeat;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1930px) {
   .section-bts {
-    height: 450px;
+    height: 812px;
   }
 
   .qr-bts {
-    left: 100px;
-    top: 10px;
+    top: 54px;
+    left: 190px;
+    right: 0;
+    margin: auto;
+    width: 204px;
+    height: 220px;
+  }
+
+  .qr-bts img {
+    top: 45px;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media only screen and (max-width: 1660px) {
+  .section-bts {
+    height: 700px;
+  }
+
+  .qr-bts {
+    left: 170px;
+    top: 40px;
+    width: 184px;
+    height: 200px;
+  }
+
+  .qr-bts img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .section-bts {
+    height: 611px;
+  }
+
+  .qr-bts { 
+    position: absolute;
+    top: 26px;
+    left: 140px;
+    right: 0;
+    margin: auto;
+    width: 164px;
+    height: 180px;
+    background: url(../images/bts/qr-bg.png) center center/contain no-repeat;
+  }
+  
+  .qr-bts img {
+    position: absolute;
+    top: 30px;
+    left: 6px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 74px;
+    height: 74px;
+    transform: rotate(-14.93deg);
+  }
+}
+
+@media (max-width: 1250px) {
+  .section-bts {
+    height: 530px;
+  }
+
+  .qr-bts {
+    left: 120px;
+    top: 38px;
     width: 124px;
     height: 140px;
   }
@@ -2074,25 +2142,22 @@ body {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1080px) {
   .section-bts {
-    height: 380px;
+    height: 457px;
   }
 
   .qr-bts {
-    left: 80px;
-    top: 7px;
-    width: 104px;
-    height: 120px;
+    left: 100px;
+    top: 14px;
+    width: 124px;
+    height: 140px;
   }
 
-  .qr-bts img {
-    width: 50px;
-    height: 50px;
-    top: 25px;
-    left: 5px;
-  }
+}
 
+@media only screen and (max-width: 991px) {
+  
   .section-invertor-banner {
     padding-bottom: 70px;
   }
@@ -2141,28 +2206,68 @@ body {
   }
 }
 
+@media only screen and (max-width: 930px) {
+  .section-bts {
+    height: 393px;
+  }
+
+  .qr-bts {
+    left: 80px;
+    top: 11px;
+    width: 104px;
+    height: 120px;
+  }
+
+  .qr-bts img {
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    left: 5px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .section-bts {
+    height: 337px;
+  }
+
+  .qr-bts {
+    left: 80px;
+    top: 15px;
+    width: 84px;
+    height: 100px;
+  }
+
+  .qr-bts img {
+    width: 45px;
+    height: 45px;
+    top: 17px;
+    left: 3px;
+  }
+}
+
 @media only screen and (max-width: 740px) {
   .section-bts {
     height: 656px;
-    background: url(../images/bts/bts-bg-mob.jpg) center bottom/102% no-repeat;
+    background: url(../images/bts/bts-bg-mob.jpg) -500px bottom/auto 970px no-repeat;
   }
 
   .section-bts::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
     width: 100%;
-    height: 656px;
-    background: url(../images/bts/bts-bg-elem.png) center/373px no-repeat;
+    height: 626px;
+    background: url(../images/bts/bts-bg-elem.png) center bottom/auto 100% no-repeat;
   }
 
   .section-bts .btn-orange {
     position: absolute;
-    top: 250px;
+    top: 265px;
     left: 0;
     right: 0;
     margin: auto;
@@ -2181,17 +2286,14 @@ body {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .section-bts {
-    background: url(../images/bts/bts-bg-mob.jpg) center 100% no-repeat;
-  }
+@media only screen and (max-width: 350px) {
+  .section-bts{
+    height: 630px;
 }
 
-@media only screen and (max-width: 320px) {
   .section-bts::before {
-    background-size: 350px;
-  }
-
+    height: 575px;
+}
   .invertor-banner .btn-orange {
     bottom: 0;
   }
